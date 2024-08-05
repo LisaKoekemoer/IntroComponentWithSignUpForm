@@ -1,38 +1,142 @@
-.App {
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #FF7979;
+  background-image: url('./images/bg-intro-desktop.png');
+}
+
+.main-component {
+  display: flex;
+}
+
+.intro{
+  width: 525px;
+  height: 220px;
+  margin-left: 165px;
+  margin-top: 220px;
+}
+
+.intro h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.intro p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-top: 11px;
+}
+
+.sign-up {
+  margin: auto;
+}
+
+.pricing {
+  width: 540px;
+  height: 60px;
+  background-color: #5E54A4;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 15px;
   text-align: center;
+  align-content: center;
+  margin-top: 80px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pricing span {
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.signUp-Form {
+  width: 540px;
+  height: 474px;
+  background-color: #FFFFFF;
+  margin-top: 25px;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.signUp-Form form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 37px;
 }
 
-.App-link {
-  color: #61dafb;
+#firstName, 
+#lastName,
+#email,
+#password {
+  width: 440px;
+  height: 56px;
+  border-radius: 7px;
+  border-color: #DEDEDE;
+  border-width: 0.5px;
+  border-style: solid;
+  padding-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#firstName:focus-visible,
+#lastName:focus-visible,
+#email:focus-visible,
+#password:focus-visible {
+  border-color: #5E54A4;
+  border-width: 0.5px;
+  border-style: solid;
+  color: #3D3B48;
+  font-size: 14px;
+  font-weight: 600;
 }
+
+#firstName::placeholder,
+#lastName::placeholder,
+#email::placeholder,
+#password::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #3D3B4895;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#firstName {
+  margin-top: 50px;
+}
+
+#lastName,
+#email,
+#password,
+#claim-btn {
+  margin-top: 15px;
+}
+
+#claim-btn {
+  width: 465px;
+  height: 56px;
+  border-radius: 10px;
+  border: none;
+  background-color: #38CC8B;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0px 7px 0px #2eb379;
+}
+
+.TandC {
+  font-size: 11px;
+  font-weight: 500;
+  color: #BAB7D4;
+  margin-left: 80px;
+}
+
+.TandC span {
+  font-weight: 700;
+  color: #FF7979;
+}
+
+.error-message {
+  color: #FF7979;
+}
+
+
+
+
